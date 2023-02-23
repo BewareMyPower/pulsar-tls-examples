@@ -6,7 +6,7 @@ const Pulsar = require('pulsar-client');
     });
 
     const auth = new Pulsar.AuthenticationOauth2({
-        issuer_url: process.env.PULSAR_SERVICE_URL,
+        issuer_url: process.env.PULSAR_ISSUER_URL,
         private_key: process.env.PULSAR_PRIVATE_KEY,
         audience: process.env.PULSAR_AUDIENCE,
     })
